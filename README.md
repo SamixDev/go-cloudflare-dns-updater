@@ -1,6 +1,6 @@
 # This go app updates cloudflare "A" record every hour for DDNS
 
-It fetches the Public IP from ip-api.com and uses cloudflare API to update to the new IP only if the IP has changed
+It checks every hour and fetches the Public IP from ip-api.com and uses cloudflare API to update to the new IP only if the IP has changed
 
 ## Create a .env in root dir and include the following
 ```
