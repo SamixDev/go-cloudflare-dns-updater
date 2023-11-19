@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: Base
+    env_file:
+      - ./.env
+    environment:
+      CLOUDFLARE_API_KEY: $CLOUDFLARE_API_KEY
+      ZONE_ID: $ZONE_ID
+      ZONE_NAME: $ZONE_NAME
