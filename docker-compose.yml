@@ -11,3 +11,4 @@ services:
       CLOUDFLARE_API_KEY: $CLOUDFLARE_API_KEY
       ZONE_ID: $ZONE_ID
       ZONE_NAME: $ZONE_NAME
+    restart: always
